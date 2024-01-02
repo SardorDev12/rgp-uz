@@ -1,0 +1,25 @@
+.contact-div{
+    display: inline-block;
+    width: auto;
+    
+}
+
+.contact-div:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.contactBtn{
+    background-color: #38B72C;
+    outline: none;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    z-index: 99;
+  
+}
+
+
