@@ -6,6 +6,7 @@ import ContactBtn from './/ContactBtn'
 function Header() {
   return (
     <header>
+      <div className="container">
       <div className="logo">
         <img src={logo} alt="" className="logo-img" />
       </div>
@@ -26,6 +27,7 @@ function Header() {
         </ul>
         <ContactBtn text={'+998 90 601 04 01'} number={'+998 90 601 04 01'}/>
       </nav>
+      </div>
     </header>
   )
 }

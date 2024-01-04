@@ -1,0 +1,35 @@
+@import './variables.scss';
+.services-section{
+    width: 90%;
+    margin: 0 auto;
+    .container{
+
+        .services{
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
+            .service-img{
+                position: relative;
+                .service-info{
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 0.5rem 2rem 0.5rem 0.5rem;
+                    color: white;
+                    background-color: #27283E;
+                    position: absolute;
+                    bottom: 0;
+                    @include flex-row;
+                    justify-content: flex-start;
+                    gap: 0.5rem;
+                    .service-title{
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+       .contact-div{
+        margin: 2rem 0;
+       }
+    }
+}
