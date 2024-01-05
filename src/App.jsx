@@ -1,25 +1,15 @@
 import React from "react";
+import "./index.scss";
+
+// Components
 import Header from "./Components/Header";
 import Home from "./Components/Home";
-import Services from "./Components/Services";
-import About from "./Components/About";
-import AdvantagesPartners from "./Components/AdvantagePartners";
-import Footer from "./Components/Footer";
-import Comments from "./Components/Comments";
-
-// Styles
-import "./Styles/app.scss";
 
 function App() {
   return (
-    <div className="app">
+    <div className="app container">
       <Header />
       <Home />
-      <Services />
-      <About />
-      <Comments />
-      <AdvantagesPartners />
-      <Footer />
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.cta-btn {
+  background-color: #38b72c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 700;
+  &:hover {
+    background-color: #36992d;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+}

@@ -1,35 +1,100 @@
-@import './variables.scss';
+@import "./variables.scss";
+.header {
+  .line {
+    font-size: 2rem;
+    color: #9f9494;
+  }
+  svg {
+    font-size: 1.5rem;
+    color: #27283e;
 
-header{
-    background-color: #27283E;
-    width: 100%;
-    padding: 0 4.8rem;
-    position: fixed;
-    z-index: 99;
-    
-    .container{
-        @include flex-row;
-    height: 85px;
-        nav{
-            @include flex-row;
-            .nav-links{
-                @include flex-row;
-                gap: 2rem;
-                padding-right: 2rem;
-                .nav-link{
-    
-                    :hover{
-                        color: #FF0000;
-                    }
-                    a{
-                        color: white;
-                    }
-                }
-            }
-        }
+    :hover {
+      color: #00ccff;
     }
-}
+  }
+  .header-top {
+    @include flex;
+    padding: $base-pad;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
 
-.logo{
-    width: 158px;
+    .contact-info,
+    li,
+    a,
+    .lang-links,
+    .lang,
+    .social-links {
+      @include flex;
+    }
+
+    .contact-info {
+      font-size: 0.8rem;
+      li,
+      a {
+        gap: 0.5rem;
+      }
+    }
+
+    .lang-links {
+      .lang {
+        div {
+          @include flex;
+          width: 2.5rem;
+          margin: 0 0.1rem;
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .social-links {
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .header-bottom,
+  .logo,
+  .navbar,
+  .nav-items {
+    @include flex;
+  }
+  .header-bottom {
+    background-color: #0d29a3;
+    padding: $base-pad;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    .logo-img {
+      width: 11rem;
+      cursor: pointer;
+    }
+
+    .line {
+      height: 2.5rem;
+      margin-right: 1rem;
+    }
+
+    .logo-title {
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: white;
+    }
+
+    .navbar {
+      .nav-items {
+        gap: 2rem;
+        margin-right: 2rem;
+        a {
+          color: white;
+          &:hover {
+            color: #00ccff;
+          }
+        }
+      }
+      .cta-btn {
+        padding: 0.8rem 1rem;
+      }
+    }
+  }
 }

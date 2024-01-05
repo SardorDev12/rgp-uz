@@ -1,5 +1,7 @@
-@mixin flex-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+$base-pad: 0 4rem;

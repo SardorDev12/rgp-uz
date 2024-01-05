@@ -1,8 +1,0 @@
-@import "./variables.scss";
-
-.about-section {
-  width: 100%;
-  .container {
-    @include flex-row;
-  }
-}
