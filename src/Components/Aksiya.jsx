@@ -26,7 +26,9 @@ function Aksiya() {
           <div className="aksiya-img">
             <img src={aksiyaImg} alt="aksiya img" />
             <div className="aksiya-info">
-              <h3 className="card-title">Sayt orqali buyurtma uchun</h3>
+              <h3 className="card-title">
+                Pensionerlar <br /> uchun
+              </h3>
               <h1 className="aksiya">15%</h1>
               <Cta txt={"Aksiyani olish"} />
             </div>
@@ -36,7 +38,7 @@ function Aksiya() {
           <div className="aksiya-img">
             <img src={aksiyaImg} alt="aksiya img" />
             <div className="aksiya-info">
-              <h3 className="card-title">Sayt orqali buyurtma uchun</h3>
+              <h3 className="card-title">Tug'ilgan kuningiz uchun</h3>
               <h1 className="aksiya">15%</h1>
               <Cta txt={"Aksiyani olish"} />
             </div>
