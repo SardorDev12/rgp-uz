@@ -1,5 +1,8 @@
 @import "./variables.scss";
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
   .line {
     font-size: 2rem;
     color: #9f9494;

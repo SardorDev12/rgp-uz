@@ -7,6 +7,7 @@ import bannerWave from "../Images/banner-wave.svg";
 
 // Components
 import Cta from "./Cta";
+import HomeForm from "./HomeForm";
 
 function Home() {
   return (
@@ -19,10 +20,13 @@ function Home() {
       </div>
       <div className="home-info">
         <h1 className="home-title">
-          SAMARQAND VILOYATIDA GAZ PLITA TA'MIRLASH XIZMATI
+          SAMARQAND VILOYATIDA GAZ PLITA <br /> TA'MIRLASH XIZMATI
         </h1>
         <p className="home-desc">Har qanday gaz plitangizni ta'mirlaymiz</p>
         <Cta txt={"Bog'lanish"} num={"+998 90 601 04 01"} />
+      </div>
+      <div className="home-form">
+        <HomeForm />
       </div>
     </div>
   );

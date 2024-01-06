@@ -33,9 +33,9 @@ function Header() {
           </li>
           <div className="line"></div>
           <li>
-            <a href="mailto:remont.gaz.plita@gmail.com" target="_blank">
+            <a href="mailto:jamshed0401@gmail.com" target="_blank">
               <IoMail />
-              remont.gaz.plita@gmail.com
+              jamshed0401@gmail.com
             </a>
           </li>
           <div className="line"></div>
