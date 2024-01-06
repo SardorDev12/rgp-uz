@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+.about-section {
+  padding: $base-pad;
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .about-poster {
+    position: relative;
+
+    .poster-img {
+      padding: 0 3rem;
+    }
+    .poster-text {
+      position: absolute;
+      top: 8rem;
+      padding: 0 3rem;
+      color: white;
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-weight: 300;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .about-info {
+    position: relative;
+    .about-title {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin: 2rem 0;
+    }
+
+    .cta-btn {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
