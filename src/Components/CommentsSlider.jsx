@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { IoPerson } from "react-icons/io5";
 
 const CommentsSlider = () => {
   const [data, setData] = useState([]);
@@ -15,7 +16,6 @@ const CommentsSlider = () => {
   }, []);
 
   const settings = {
-    dots: true,
     arrows: false,
     infinite: true,
     speed: 500,
@@ -30,10 +30,13 @@ const CommentsSlider = () => {
       <Slider {...settings}>
         {data.map((item) => (
           <div key={item.id} className="slider-content">
-            <p>{item.comment.slice(0, 50)}</p>
+            <p className="comment">{item.comment}</p>
             <div className="commenter">
-              <h3>{item.name}</h3>
-              <h4>{item.job}</h4>
+              <IoPerson />
+              <div className="commenter-info">
+                <h3>{item.name}</h3>
+                <h4>{item.job}</h4>
+              </div>
             </div>
           </div>
         ))}
