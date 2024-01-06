@@ -7,6 +7,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Comment from "./Components/Comment";
 import Aksiya from "./Components/Aksiya";
+import Services from "./Components/Services";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Comment />
       <Aksiya />
+      <Services />
     </div>
   );
 }

@@ -17,7 +17,7 @@ function Aksiya() {
             <img src={aksiyaImg} alt="aksiya img" />
             <div className="aksiya-info">
               <h3 className="card-title">Sayt orqali buyurtma uchun</h3>
-              <h1 className="aksiya">15%</h1>
+              <h1 className="aksiya">10%</h1>
               <Cta txt={"Aksiyani olish"} />
             </div>
           </div>

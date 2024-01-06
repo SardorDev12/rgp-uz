@@ -1,0 +1,86 @@
+@import "./variables.scss";
+
+.services-section {
+  width: 100%;
+  position: relative;
+  padding-top: 5rem;
+
+  .services-bg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .services-info {
+    padding: $base-pad;
+    padding-top: 5rem;
+    @include flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+
+    .services-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-right: 2rem;
+      width: 30%;
+    }
+
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem 8rem;
+      margin: 0 auto;
+
+      .service-card {
+        svg {
+          font-size: 4rem;
+        }
+
+        h4 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .izohlar {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -22rem;
+    @include flex;
+    justify-content: flex;
+    width: 50%;
+    margin: 0 auto;
+    z-index: 99;
+    .izohlar-slider {
+      background-color: #27283ed3;
+      width: 50%;
+      max-height: 207px;
+      min-height: 207px;
+      padding: 1rem;
+
+      .stars {
+        svg {
+          font-size: 2rem;
+          color: gold;
+        }
+      }
+
+      .slider-container {
+        .slider-content {
+          color: white;
+          margin-bottom: 1rem;
+          p {
+            margin-bottom: 2rem;
+            max-width: 50px;
+          }
+        }
+      }
+    }
+    .izohlar-form {
+      background-color: #27283e;
+      padding: 1rem;
+    }
+  }
+}
