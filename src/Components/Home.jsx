@@ -7,7 +7,18 @@ import bannerWave from "../Images/banner-wave.svg";
 
 // Components
 import Cta from "./Cta";
-import HomeForm from "./HomeForm";
+import Form from "./Form";
+
+const formProps = {
+  title: "Hoziroq bizga buyurtma bering!",
+  api: "https://sardorfarhodogli.pythonanywhere.com/applications/",
+  plc1: "Ism",
+  plc2: "Raqam",
+  plc3: "Xabar",
+  name1: "full_name",
+  name2: "phone_number",
+  name3: "message",
+};
 
 function Home() {
   return (
@@ -26,7 +37,7 @@ function Home() {
         <Cta txt={"Bog'lanish"} num={"+998 90 601 04 01"} />
       </div>
       <div className="home-form">
-        <HomeForm />
+        <Form {...formProps} />
       </div>
     </div>
   );
