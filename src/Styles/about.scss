@@ -3,44 +3,89 @@
 .about-section {
   padding: $base-pad;
   padding-top: 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-  .about-poster {
-    position: relative;
+    .about-poster {
+      position: relative;
 
-    .poster-img {
-      padding: 0 3rem;
+      .poster-img {
+        padding: 0 3rem;
+      }
+      .poster-text {
+        position: absolute;
+        top: 8rem;
+        padding: 0 3rem;
+        color: white;
+        h1 {
+          font-size: 3rem;
+        }
+        h2 {
+          font-weight: 300;
+          margin: 1rem 0;
+        }
+      }
     }
-    .poster-text {
-      position: absolute;
-      top: 8rem;
-      padding: 0 3rem;
-      color: white;
-      h1 {
+
+    .about-info {
+      position: relative;
+      .about-title {
         font-size: 3rem;
       }
-      h2 {
-        font-weight: 300;
-        margin: 1rem 0;
+
+      p {
+        font-size: 1.3rem;
+        margin: 2rem 0;
+      }
+
+      .cta-btn {
+        position: absolute;
+        right: 0;
       }
     }
   }
 
-  .about-info {
-    position: relative;
-    .about-title {
-      font-size: 3rem;
+  .pros {
+    padding: $base-pad;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .pros-title {
+      margin-bottom: 2rem;
     }
 
-    p {
-      font-size: 1.3rem;
-      margin: 2rem 0;
-    }
+    .pros-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
 
-    .cta-btn {
-      position: absolute;
-      right: 0;
+      .pro-img {
+        position: relative;
+
+        img {
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.429);
+        }
+
+        .pro-card {
+          position: absolute;
+          background-color: #27283ed3;
+          right: -1.5rem;
+          bottom: -2rem;
+          display: block;
+          padding: 1rem;
+          color: white;
+          border-radius: 5px;
+
+          .pro-card__title {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+          }
+
+          p{
+            max-width: 15rem;
+          }
+        }
+      }
     }
   }
 }
