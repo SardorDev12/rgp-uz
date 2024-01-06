@@ -1,0 +1,46 @@
+@import "./variables.scss";
+.aksiyalar {
+  width: 100%;
+  padding: $base-pad;
+  padding-top: 5rem;
+
+  .aksiya-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #27283e;
+  }
+  .aksiya-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+
+    .aksiya-img {
+      position: relative;
+      .aksiya-info {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        @include flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        color: white;
+        .card-title {
+          font-size: 1.5rem;
+          max-width: 70%;
+          margin: 0 auto;
+        }
+
+        .aksiya {
+          font-size: 4.5rem;
+          font-family: cursive;
+        }
+      }
+    }
+  }
+}

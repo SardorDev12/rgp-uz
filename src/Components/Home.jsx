@@ -34,7 +34,7 @@ function Home() {
           SAMARQAND VILOYATIDA GAZ PLITA <br /> TA'MIRLASH XIZMATI
         </h1>
         <p className="home-desc">Har qanday gaz plitangizni ta'mirlaymiz</p>
-        <Cta txt={"Bog'lanish"} num={"+998 90 601 04 01"} />
+        <Cta txt={"Bog'lanish"} />
       </div>
       <div className="home-form">
         <Form {...formProps} />

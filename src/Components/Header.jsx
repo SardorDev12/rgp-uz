@@ -105,7 +105,7 @@ function Header() {
               <a href="">Aloqa</a>
             </li>
           </ul>
-          <Cta txt={"+998 90 601 04 01 "} num={"+998 90 601 04 01 "} />
+          <Cta txt={"+998 90 601 04 01 "} />
         </nav>
       </div>
     </div>

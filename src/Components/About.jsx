@@ -36,7 +36,7 @@ function About() {
             professionallardan tarkib topgan jamoa bor imkoniyatini ishga solgan
             holda, eng zo'r qulayliklarni taqdim etishni maqsad qilgan.
           </p>
-          <Cta txt={"BOG'LANISH"} num={"+998 90 601 04 01 "} />
+          <Cta txt={"BOG'LANISH"} />
         </div>
       </div>
       <div className="pros">
