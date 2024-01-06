@@ -9,6 +9,7 @@ import Comment from "./Components/Comment";
 import Aksiya from "./Components/Aksiya";
 import Services from "./Components/Services";
 import AdsBanner from "./Components/AdsBanner";
+import Partners from "./Components/Partners";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Aksiya />
       <Services />
       <AdsBanner />
+      <Partners />
     </div>
   );
 }
