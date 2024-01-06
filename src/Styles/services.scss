@@ -46,11 +46,12 @@
   .izohlar {
     width: 60%;
     padding: 2rem;
-    margin: 3rem auto 2rem;
+    margin: 5rem auto 2rem;
     background-color: #27283e;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    border-radius: 5px;
     .izohlar-slider {
       width: 45%;
 

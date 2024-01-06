@@ -1,1 +1,23 @@
 @import "./variables.scss";
+
+.ads-section {
+  .adsbanner {
+    height: 450px;
+    position: relative;
+
+    .ads-card {
+      position: absolute;
+      right: 0;
+      bottom: -3rem;
+      width: 30%;
+      background-color: white;
+      padding: 1.5rem;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.429);
+      border-radius: 5px;
+
+      p{
+        margin: 1rem 0;
+      }
+    }
+  }
+}
