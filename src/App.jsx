@@ -21,8 +21,8 @@ function App() {
       <Comment />
       <Aksiya />
       <Services />
-      {/*
       <AdsBanner />
+      {/*
       <Partners />
       <Footer /> */}
     </div>

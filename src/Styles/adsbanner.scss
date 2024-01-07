@@ -6,7 +6,7 @@
     position: relative;
 
     @media screen and (max-width: $medium-screen) {
-height: 350px;
+      height: 350px;
     }
 
     .ads-card {
@@ -18,8 +18,11 @@ height: 350px;
       padding: 1.5rem;
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.429);
       border-radius: 5px;
+      @media screen and (max-width: $small-screen) {
+        width: 80%;
+      }
 
-      p{
+      p {
         margin: 1rem 0;
       }
     }
