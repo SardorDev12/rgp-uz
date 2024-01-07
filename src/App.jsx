@@ -20,8 +20,8 @@ function App() {
       <About />
       <Comment />
       <Aksiya />
-      {/*
       <Services />
+      {/*
       <AdsBanner />
       <Partners />
       <Footer /> */}
