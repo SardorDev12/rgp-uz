@@ -63,18 +63,12 @@
     position: absolute;
     bottom: 4px;
     right: 0;
-    background-color: #27283e;
-    padding: 1rem;
+
     @media screen and (max-width: $small-screen) {
       width: 85%;
-      bottom: -25rem;
+      bottom: -35rem;
       right: 50%;
       transform: translate(50%, -50%);
-    }
-    textarea {
-      @media screen and (max-width: $medium-screen) {
-        width: 60%;
-      }
     }
   }
 }
