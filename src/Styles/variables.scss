@@ -7,9 +7,13 @@
 $base-pad: 0 4rem;
 $small-pad: 0 3rem;
 
+$xsmall-screen: 375px;
 $small-screen: 480px;
 $medium-screen: 768px;
 $large-screen: 1024px;
+
+@media screen and (max-width: $xsmall-screen) {
+}
 
 @media screen and (max-width: $small-screen) {
 }

@@ -18,8 +18,8 @@ function App() {
       <Header />
       <Home />
       <About />
-      {/*
       <Comment />
+      {/*
       <Aksiya />
       <Services />
       <AdsBanner />
