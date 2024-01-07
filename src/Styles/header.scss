@@ -3,9 +3,14 @@
   width: 100%;
   position: fixed;
   z-index: 99;
+
   svg {
     font-size: 1.5rem;
     color: #0d29a3;
+
+    @media screen and (max-width: $small-screen) {
+      font-size: 2.5rem;
+    }
   }
   .header-top {
     @include flex;
@@ -34,6 +39,8 @@
         gap: 0.5rem;
         cursor: pointer;
       }
+      width: 100%;
+      flex-direction: row-reverse;
     }
   }
 
@@ -46,12 +53,16 @@
 
     @media screen and (max-width: $small-screen) {
       width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     .logo {
       @include flex;
       justify-content: flex-start;
-
+      @media screen and (max-width: $small-screen) {
+        display: none;
+      }
       .logo-img {
         width: 150px;
         cursor: pointer;
@@ -64,7 +75,7 @@
 
     .toggle {
       color: white;
-      font-size: 2rem;
+      font-size: 4rem;
       cursor: pointer;
       display: none;
       @media screen and (max-width: $small-screen) {
@@ -75,22 +86,43 @@
     .navbar {
       @include flex;
       justify-content: flex-start;
+      transition: all 0.3s ease-in-out;
       @media screen and (max-width: $small-screen) {
-        display: none;
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
       }
       .nav-items {
         @include flex;
         gap: 2rem;
         margin-right: 1rem;
 
+        @media screen and (max-width: $small-screen) {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 1rem;
+        }
         .nav-item {
           a {
             color: white;
             &:hover {
               color: aquamarine;
             }
+            @media screen and (max-width: $small-screen) {
+              font-size: 2rem;
+            }
           }
         }
+      }
+    }
+    .navbar.show {
+      height: 180px;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    .cta-btn {
+      @media screen and (max-width: $small-screen) {
+        display: none;
       }
     }
   }
