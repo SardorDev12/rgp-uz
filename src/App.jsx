@@ -17,8 +17,8 @@ function App() {
     <div className="app container">
       <Header />
       <Home />
-      {/*
       <About />
+      {/*
       <Comment />
       <Aksiya />
       <Services />
