@@ -18,7 +18,11 @@
     padding: $base-pad;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-
+    @media screen and (max-width: $small-screen) {
+      padding: $small-pad;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
     .contact-info {
       @include flex;
       gap: 0.5rem;
@@ -39,8 +43,10 @@
         gap: 0.5rem;
         cursor: pointer;
       }
-      width: 100%;
-      flex-direction: row-reverse;
+      @media screen and (max-width: $small-screen) {
+        width: 100%;
+        flex-direction: row-reverse;
+      }
     }
   }
 
@@ -52,9 +58,11 @@
     padding-bottom: 0.5rem;
 
     @media screen and (max-width: $small-screen) {
-      width: 100%;
       flex-direction: column;
       align-items: flex-start;
+      padding: $small-pad;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
     }
 
     .logo {
