@@ -19,8 +19,8 @@ function App() {
       <Home />
       <About />
       <Comment />
-      {/*
       <Aksiya />
+      {/*
       <Services />
       <AdsBanner />
       <Partners />

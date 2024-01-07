@@ -3,7 +3,9 @@
   width: 100%;
   padding: $base-pad;
   padding-top: 5rem;
-
+  @media screen and (max-width: $small-screen) {
+    padding-top: 20rem;
+  }
   .aksiya-title {
     text-align: center;
     font-size: 3rem;
@@ -15,7 +17,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
-
+    @media screen and (max-width: $small-screen) {
+      grid-template-columns: 1fr;
+    }
     .aksiya-img {
       position: relative;
       .aksiya-info {
