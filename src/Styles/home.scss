@@ -16,6 +16,9 @@
     width: 100vw;
     bottom: 0;
     position: absolute;
+    @media screen and (max-width: $medium-screen) {
+      height: 300px;
+    }
   }
 
   .home-logo {
@@ -23,13 +26,21 @@
     width: 35rem;
     right: 8rem;
     top: 13rem;
+
+    @media screen and (max-width: $small-screen) {
+      right: 2rem;
+      top: 10rem;
+    }
   }
 
   .home-info {
     position: absolute;
     bottom: 7rem;
-
     padding: $base-pad;
+    @media screen and (max-width: $small-screen) {
+      bottom: 6rem;
+      padding: $small-pad;
+    }
 
     .home-title {
       font-size: 2.3rem;
@@ -54,7 +65,12 @@
     right: 0;
     background-color: #27283e;
     padding: 1rem;
-
+    @media screen and (max-width: $small-screen) {
+      width: 85%;
+      bottom: -15rem;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
     textarea {
       @media screen and (max-width: $medium-screen) {
         width: 60%;
