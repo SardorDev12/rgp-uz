@@ -39,7 +39,7 @@ function Form({ title, api, plc1, plc2, plc3, name1, name2, name3 }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <h3 className="form-title">{title}</h3>
       <div className="user-info">
         <input
