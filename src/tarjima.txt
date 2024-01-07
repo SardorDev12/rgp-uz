@@ -1,0 +1,197 @@
+{
+  "en": {
+  "header": {
+    "contactInfo": {
+      "workingHours": "Dushanba-Shanba, 9:00-18:00"
+    },
+    "logoTitle": "REMONT GAZOVIX PLIT"
+  },
+  "navItems": {
+    "home": "Bosh sahifa",
+    "about": "Haqimizda",
+    "services": "Xizmatlar",
+    "contact": "Aloqa"
+  },
+  "home": {
+    "homeTitle": "SAMARQAND VILOYATIDA GAZ PLITA TA'MIRLASH XIZMATI",
+    "homeText": "Har qanday gaz plitangizni ta'mirlaymiz",
+    "ctaText": "Bog'lanish"
+  },
+  "form": {
+    "formTitle": "Hoziroq bizga buyurtma bering!",
+    "name": "Ism",
+    "num": "Raqam",
+    "message": "Xabar",
+    "submit": "Yuborish"
+  },
+  "about": {
+    "aboutTitle": "Bizning omadli tariximiz",
+    "aboutTxt1": "RGP saytiga xush kelibsiz. 2010-yilda o'z faoliyatini boshlagan bizning jamoa gaz plitalar ta'mirlashda sizning ichonchli hamkoringiz bo'lishiga ishonamiz.",
+    "aboutTxt2": "Oshxonangizdagi gaz plitangizning ahamiyatini tushungan holda, professionallardan tarkib topgan jamoa bor imkoniyatini ishga solgan holda, eng zo'r qulayliklarni taqdim etishni maqsad qilgan.",
+    "imgTitle": "Biz haqimizda...",
+    "imgTxt": "Barcha turdagi gaz plita ta'mirlash xizmati",
+    "pros": {
+      "prosTitle": "Afzalliklar",
+      "tezkorlik": "Tezkorlik",
+      "tezkorlikTxt": "Har qanday muammoni tezlikda hal qilamiz.",
+      "sifat": "Yuqori sifat",
+      "sifatTxt": "Xizmatlarimiz yuqori sifat bilan baxolanadi.",
+      "narx": "Qulay narx",
+      "narxTxt": "Barcha xizmatlarimiz hamma uchun qulay narxlarda.",
+      "tajriba": "Ko'p yillik tajriba",
+      "tajribaTxt": "10 yildan ortiq tajribaga ega jamoa."
+    }
+  },
+  "comment": {
+    "commentTitle": "Sizning fikringiz biz uchun muhim!",
+    "commentForm": {
+      "commentFormTitle": "Xizmatimizni baholang!",
+      "name": "Ism",
+      "job": "Raqam",
+      "comment": "Izoh",
+      "submit": "Yuborish"
+    }
+  },
+  "aksiyalar": {
+    "aksiyaTitle": "Aksiyalar",
+    "aksiyaCards": {
+      "saytOrqali": "Sayt orqali buyurtma uchun",
+      "pensionerlar": "Pensionerlar uchun",
+      "birthday": "Tug'ilgan kuningiz uchun",
+      "aksiyaBtnTxt": "Aksiyani olish"
+    }
+  },
+  "services": {
+    "servicesTitle": "Biz nima taklif qilamiz?",
+    "diagnoz": "Gaz plitalar diagnostikasi",
+    "tamirlash": "Gaz plitalar ta'mirlash",
+    "yangilash": "Gaz plita yangilash",
+    "konsultatsiya": "Bepul telefon konsultatsiya",
+    "maslahat": "Tanlov bo'yicha maslahat",
+    "manzil": "Manzilga borib xizmat"
+  },
+  "ads": {
+    "adsTitle": "Kuchli mutaxasis kerakmi?",
+    "adsTxt": "Bizning uzoq yillik tajribaga ega mutaxassizlardan tarkib topgan jamoamiz sizning gaz plitangizga doir har qanday muammoga yechim berishga tayyor.",
+    "adsCtaTxt": "Qo'ng'iroq qilish"
+  },
+  "partnersTitle": "Hamkorlar",
+  "footer": {
+    "footerTitle": "Ushbu xizmatlardan birortasi qiziqmi, biz bilan bog'laning.",
+    "footerManzil": {
+      "manzilTitle": "Manzil",
+      "manzil": "Manzil to'liq"
+    },
+    "contacts": {
+      "phoneNums": "Telefon raqamlar",
+      "social": "Ijtimoiy tarmoqlar"
+    },
+    "developer": "Supersite.uz tomonidan ishlab chiqilgan"
+  }
+}
+
+
+-------------------
+
+
+
+{
+  "ru": {
+    "header": {
+      "contactInfo": {
+        "email": "jamshed0401@gmail.com",
+        "workingHours": "Понедельник-Суббота, 9:00-18:00"
+      },
+      "logoTitle": "РЕМОНТ ГАЗОВЫХ ПЛИТ"
+    },
+    "navItems": {
+      "home": "Главная",
+      "about": "О нас",
+      "services": "Услуги",
+      "contact": "Контакты"
+    },
+    "home": {
+      "homeTitle": "СЕРВИС ПО РЕМОНТУ ГАЗОВЫХ ПЛИТ В ОБЛАСТИ САМАРКАНД",
+      "homeText": "Мы ремонтируем любые газовые плиты",
+      "ctaText": "Связаться"
+    },
+    "form": {
+      "formTitle": "Оставьте свой заказ прямо сейчас!",
+      "name": "Имя",
+      "num": "Номер",
+      "message": "Сообщение",
+      "submit": "Отправить"
+    },
+    "about": {
+      "aboutTitle": "Наша успешная история",
+      "aboutTxt1": "Добро пожаловать на сайт RGP. Наш коллектив, начав свою деятельность в 2010 году, стремится стать вашим надежным партнером в области ремонта газовых плит.",
+      "aboutTxt2": "С пониманием важности вашей газовой плиты в кухне и воспользовавшись возможностями, созданными профессионалами, мы ставим перед собой цель предоставить наилучшие условия обслуживания.",
+      "imgTitle": "О нас...",
+      "imgTxt": "Услуги по ремонту газовых плит всех видов",
+      "pros": {
+        "prosTitle": "Преимущества",
+        "tezkorlik": "Скорость",
+        "tezkorlikTxt": "Решаем любые проблемы быстро.",
+        "sifat": "Высокое качество",
+        "sifatTxt": "Наши услуги оцениваются высоким качеством.",
+        "narx": "Удобные цены",
+        "narxTxt": "Все наши услуги по удобным ценам.",
+        "tajriba": "Многолетний опыт",
+        "tajribaTxt": "Команда с более чем 10-летним опытом."
+      }
+    },
+    "comment": {
+      "commentTitle": "Ваше мнение важно для нас!",
+      "commentForm": {
+        "commentFormTitle": "Оцените наши услуги!",
+        "name": "Имя",
+        "job": "Профессия",
+        "comment": "Комментарий",
+        "submit": "Отправить"
+      }
+    },
+    "aksiyalar": {
+      "aksiyaTitle": "Акции",
+      "aksiyaCards": {
+        "saytOrqali": "Через сайт",
+        "pensionerlar": "Для пенсионеров",
+        "birthday": "На день рождения",
+        "aksiyaBtnTxt": "Участвовать в акции"
+      }
+    },
+    "services": {
+      "servicesTitle": "Что мы предлагаем?",
+      "diagnoz": "Диагностика газовых плит",
+      "tamirlash": "Ремонт газовых плит",
+      "yangilash": "Обновление газовых плит",
+      "konsultatsiya": "Бесплатная телефонная консультация",
+      "maslahat": "Консультация по выбору",
+      "manzil": "Выезд на дом"
+    },
+    "ads": {
+      "adsTitle": "Нужен опытный специалист?",
+      "adsTxt": "Наш коллектив, состоящий из профессионалов с многолетним опытом, готов решить любую проблему с вашей газовой плитой.",
+      "adsCtaTxt": "Позвоните нам"
+    },
+    "partnersTitle": "Партнеры",
+    "footer": {
+      "footerTitle": "Если какая-то из наших услуг вас заинтересовала, свяжитесь с нами.",
+      "footerManzil": {
+        "manzilTitle": "Адрес",
+        "manzil": "Полный адрес"
+      },
+      "contacts": {
+        "phoneNums": "Телефонные номера",
+        "social": "Социальные сети"
+      },
+      "developer": "Создано Supersite.uz"
+    }
+  }
+}
+
+
+{t("")}
+
+import { useTranslation } from "react-i18next";
+
+const { t } = useTranslation();

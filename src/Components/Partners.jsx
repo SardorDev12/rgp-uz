@@ -1,6 +1,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/partners.scss";
+import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import partner1 from "../Images/Partners/img1.svg";
 import partner2 from "../Images/Partners/img2.svg";
@@ -26,6 +27,7 @@ import partner20 from "../Images/Partners/img20.svg";
 // Images
 
 function Partners() {
+  const { t } = useTranslation();
   const settings = {
     arrows: false,
     infinite: true,
@@ -37,7 +39,7 @@ function Partners() {
   };
   return (
     <div className="partners-section">
-      <div className="partners-title">Hamkorlar</div>
+      <div className="partners-title">{t("partnersTitle")}</div>
       <div className="partners">
         <Slider {...settings}>
           <div className="partner">

@@ -7,13 +7,15 @@ import { IoLogoYoutube } from "react-icons/io5";
 import { MdCall } from "react-icons/md";
 import Form from "./Form";
 import "../Styles/footer.scss";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   const formProps = {
     api: "https://sardorfarhodogli.pythonanywhere.com/applications/",
-    plc1: "Ism",
-    plc2: "Raqam",
-    plc3: "Xabar",
+    plc1: t("form.name"),
+    plc2: t("form.num"),
+    plc3: t("form.message"),
     name1: "full_name",
     name2: "phone_number",
     name3: "message",
@@ -25,17 +27,14 @@ function Footer() {
           <img src={footerLogo} alt="footer logo" />
         </div>
         <div className="manzil">
-          <h3 className="manzil-title">
-            Ushbu xizmatlardan birortasi qiziqmi,
-            <br /> biz bilan bog'laning.
-          </h3>
-          <h4>Manzil</h4>
-          <p>Manzil to'liq</p>
+          <h3 className="manzil-title">{t("footer.footerTitle")}</h3>
+          <h4>{t("footer.footerManzil.manzilTitle")}</h4>
+          <p>{t("footer.footerManzil.manzil")}</p>
         </div>
 
         <div className="contact-links">
           <div className="numbers">
-            <h5>Telefon raqamlar</h5>
+            <h5>{t("footer.contacts.phoneNums")}</h5>
             <ul>
               <li>
                 <a href="tel:+998 90 601 04 01" target="_blank">
@@ -54,7 +53,7 @@ function Footer() {
 
           <div className="tarmoqlar">
             <div className="social-links">
-              <h5>Ijtimoiy tarmoqlar</h5>
+              <h5>{t("footer.contacts.social")}</h5>
               <ul>
                 <li>
                   <a href="">
@@ -90,7 +89,9 @@ function Footer() {
             loading="lazy"
           ></iframe>
         </div>
-        <p className="developer">Supersite.uz tomonidan ishlab chiqilgan</p>
+        <a target="_blank" href="https://supersite.uz/" className="developer">
+          {t("footer.developer")}
+        </a>
       </div>
     </div>
   );

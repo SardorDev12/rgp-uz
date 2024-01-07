@@ -1,0 +1,95 @@
+{
+  "translation": {
+    "header": {
+      "contactInfo": {
+        "workingHours": "Dushanba-Shanba, 9:00-18:00"
+      },
+      "logoTitle1": "REMONT GAZOVIX ",
+      "logoTitle2": "PLIT"
+    },
+    "navItems": {
+      "home": "Bosh sahifa",
+      "about": "Haqimizda",
+      "services": "Xizmatlar",
+      "contact": "Aloqa"
+    },
+    "home": {
+      "homeTitle1": "SAMARQAND VILOYATIDA GAZ PLITA ",
+      "homeTitle2": "TA'MIRLASH XIZMATI",
+      "homeText": "Har qanday gaz plitangizni ta'mirlaymiz",
+      "ctaText": "Bog'lanish"
+    },
+    "form": {
+      "formTitle": "Hoziroq bizga buyurtma bering!",
+      "name": "Ism",
+      "num": "Raqam",
+      "message": "Xabar",
+      "submit": "Yuborish"
+    },
+    "about": {
+      "aboutTitle": "Bizning omadli tariximiz",
+      "aboutTxt1": "RGP saytiga xush kelibsiz. 2010-yilda o'z faoliyatini boshlagan bizning jamoa gaz plitalar ta'mirlashda sizning ichonchli hamkoringiz bo'lishiga ishonamiz.",
+      "aboutTxt2": "Oshxonangizdagi gaz plitangizning ahamiyatini tushungan holda, professionallardan tarkib topgan jamoa bor imkoniyatini ishga solgan holda, eng zo'r qulayliklarni taqdim etishni maqsad qilgan.",
+      "imgTitle": "Biz haqimizda...",
+      "imgTxt": "Barcha turdagi gaz plita ta'mirlash xizmati",
+      "pros": {
+        "prosTitle": "Afzalliklar",
+        "tezkorlik": "Tezkorlik",
+        "tezkorlikTxt": "Har qanday muammoni tezlikda hal qilamiz.",
+        "sifat": "Yuqori sifat",
+        "sifatTxt": "Xizmatlarimiz yuqori sifat bilan baxolanadi.",
+        "narx": "Qulay narx",
+        "narxTxt": "Barcha xizmatlarimiz hamma uchun qulay narxlarda.",
+        "tajriba": "Ko'p yillik tajriba",
+        "tajribaTxt": "10 yildan ortiq tajribaga ega jamoa."
+      }
+    },
+    "comment": {
+      "commentTitle1": "Sizning fikringiz ",
+      "commentTitle2": "biz uchun muhim!",
+      "commentForm": {
+        "commentFormTitle": "Xizmatimizni baholang!",
+        "name": "Ism",
+        "job": "Raqam",
+        "comment": "Izoh",
+        "submit": "Yuborish"
+      }
+    },
+    "aksiyalar": {
+      "aksiyaTitle": "Aksiyalar",
+      "aksiyaCards": {
+        "saytOrqali": "Sayt orqali buyurtma uchun",
+        "pensionerlar": "Pensionerlar uchun chegirma",
+        "birthday": "Tug'ilgan kuningiz uchun",
+        "aksiyaBtnTxt": "Aksiyani olish"
+      }
+    },
+    "services": {
+      "servicesTitle": "Biz nima taklif qilamiz?",
+      "diagnoz": "Gaz plitalar diagnostikasi",
+      "tamirlash": "Gaz plitalar ta'mirlash",
+      "yangilash": "Gaz plita yangilash",
+      "konsultatsiya": "Bepul telefon konsultatsiya",
+      "maslahat": "Tanlov bo'yicha maslahat",
+      "manzil": "Manzilga borib xizmat"
+    },
+    "ads": {
+      "adsTitle": "Kuchli mutaxasis kerakmi?",
+      "adsTxt": "Bizning uzoq yillik tajribaga ega mutaxassizlardan tarkib topgan jamoamiz sizning gaz plitangizga doir har qanday muammoga yechim berishga tayyor.",
+      "adsCtaTxt": "Qo'ng'iroq qilish"
+    },
+    "partnersTitle": "Hamkorlar",
+    "footer": {
+      "footerTitle": "Ushbu xizmatlardan birortasi qiziqmi, biz bilan bog'laning.",
+      "footerManzil": {
+        "manzilTitle": "Manzil",
+        "manzil": "Manzil to'liq"
+      },
+      "contacts": {
+        "phoneNums": "Telefon raqamlar",
+        "social": "Ijtimoiy tarmoqlar"
+      },
+      "developer": "Supersite.uz tomonidan ishlab chiqilgan"
+    }
+  }
+}

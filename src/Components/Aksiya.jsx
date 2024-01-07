@@ -6,19 +6,23 @@ import aksiyaImg from "../Images/aksiya.svg";
 
 // Components
 import Cta from "./Cta";
+import { useTranslation } from "react-i18next";
 
 function Aksiya() {
+  const { t } = useTranslation();
   return (
     <div className="aksiyalar">
-      <div className="aksiya-title">Aksiyalar</div>
+      <div className="aksiya-title">{t("aksiyalar.aksiyaTitle")}</div>
       <div className="aksiya-cards">
         <div className="aksiya-card">
           <div className="aksiya-img">
             <img src={aksiyaImg} alt="aksiya img" />
             <div className="aksiya-info">
-              <h3 className="card-title">Sayt orqali buyurtma uchun</h3>
+              <h3 className="card-title">
+                {t("aksiyalar.aksiyaCards.saytOrqali")}
+              </h3>
               <h1 className="aksiya">10%</h1>
-              <Cta txt={"Aksiyani olish"} />
+              <Cta txt={t("aksiyalar.aksiyaCards.aksiyaBtnTxt")} />
             </div>
           </div>
         </div>
@@ -27,10 +31,10 @@ function Aksiya() {
             <img src={aksiyaImg} alt="aksiya img" />
             <div className="aksiya-info">
               <h3 className="card-title">
-                Pensionerlar <br /> uchun
+                {t("aksiyalar.aksiyaCards.pensionerlar")}
               </h3>
               <h1 className="aksiya">15%</h1>
-              <Cta txt={"Aksiyani olish"} />
+              <Cta txt={t("aksiyalar.aksiyaCards.aksiyaBtnTxt")} />
             </div>
           </div>
         </div>
@@ -38,9 +42,12 @@ function Aksiya() {
           <div className="aksiya-img">
             <img src={aksiyaImg} alt="aksiya img" />
             <div className="aksiya-info">
-              <h3 className="card-title">Tug'ilgan kuningiz uchun</h3>
+              <h3 className="card-title">
+                {" "}
+                {t("aksiyalar.aksiyaCards.birthday")}
+              </h3>
               <h1 className="aksiya">15%</h1>
-              <Cta txt={"Aksiyani olish"} />
+              <Cta txt={t("aksiyalar.aksiyaCards.aksiyaBtnTxt")} />
             </div>
           </div>
         </div>

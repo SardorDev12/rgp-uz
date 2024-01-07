@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import "../Styles/form.scss";
+import { useTranslation } from "react-i18next";
 
 function Form({ title, api, plc1, plc2, plc3, name1, name2, name3 }) {
   const [formData, setFormData] = useState({});
-
+  const { t } = useTranslation();
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -67,7 +68,7 @@ function Form({ title, api, plc1, plc2, plc3, name1, name2, name3 }) {
         onChange={handleChange}
         autoComplete="off"
       ></textarea>
-      <button type="submit">Yuborish</button>
+      <button type="submit">{t("form.submit")}</button>
     </form>
   );
 }

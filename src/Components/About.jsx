@@ -10,8 +10,10 @@ import proImg4 from "../Images/pro-img-4.svg";
 
 // Components
 import Cta from "./Cta";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
   return (
     <div className="about-section" id="about">
       <div className="about-us">
@@ -19,35 +21,31 @@ function About() {
           <div className="poster-img">
             <img src={posterimg} alt="about poster" loading="lazy" />
             <div className="poster-text">
-              <h2>Biz haqimizda...</h2>
-              <h1>Barcha turdagi gaz plita ta'mirlash xizmati</h1>
+              <h2>{t("about.imgTitle")}</h2>
+              <h1>{t("about.imgTxt")}</h1>
             </div>
           </div>
         </div>
         <div className="about-info">
-          <h1 className="about-title">Bizning omadli tariximiz</h1>
+          <h1 className="about-title">{t("about.aboutTitle")}</h1>
           <p>
-            RGP saytiga xush kelibsiz. 2010-yilda o'z faoliyatini boshlagan
-            bizning jamoa gaz plitalar ta'mirlashda sizning ichonchli
-            hamkoringiz bo'lishiga ishonamiz.
+            {t("about.aboutTxt1")}
             <br />
             <br />
-            Oshxonangizdagi gaz plitangizning ahamiyatini tushungan holda,
-            professionallardan tarkib topgan jamoa bor imkoniyatini ishga solgan
-            holda, eng zo'r qulayliklarni taqdim etishni maqsad qilgan.
+            {t("about.aboutTxt2")}
           </p>
-          <Cta txt={"BOG'LANISH"} />
+          <Cta txt={t("home.ctaText")} />
         </div>
       </div>
       <div className="pros">
-        <h1 className="pros-title">Afzalliklar</h1>
+        <h1 className="pros-title">{t("about.pros.prosTitle")}</h1>
         <div className="pros-cards">
           <div className="card">
             <div className="pro-img">
               <img src={proImg1} alt="pro img" />
               <div className="pro-card">
-                <h3 className="pro-card__title">Tezkorlik</h3>
-                <p>Har qanday muammoni tezlikda hal qilamiz.</p>
+                <h3 className="pro-card__title">{t("about.pros.tezkorlik")}</h3>
+                <p>{t("about.pros.tezkorlikTxt")}</p>
               </div>
             </div>
           </div>
@@ -55,8 +53,8 @@ function About() {
             <div className="pro-img">
               <img src={proImg2} alt="pro img" />
               <div className="pro-card">
-                <h3 className="pro-card__title">Yuqori sifat</h3>
-                <p>Xizmatlarimiz yuqori sifat bilan baxolanadi.</p>
+                <h3 className="pro-card__title">{t("about.pros.sifat")}</h3>
+                <p>{t("about.pros.sifatTxt")}</p>
               </div>
             </div>
           </div>
@@ -64,8 +62,8 @@ function About() {
             <div className="pro-img">
               <img src={proImg3} alt="pro img" />
               <div className="pro-card">
-                <h3 className="pro-card__title">Qulay narx</h3>
-                <p>Barcha xizmatlarimiz hamma uchun qulay narxlarda.</p>
+                <h3 className="pro-card__title">{t("about.pros.narx")}</h3>
+                <p>{t("about.pros.narxTxt")}</p>
               </div>
             </div>
           </div>
@@ -73,8 +71,8 @@ function About() {
             <div className="pro-img">
               <img src={proImg4} alt="pro img" />
               <div className="pro-card">
-                <h3 className="pro-card__title">Ko'p yillik tajriba</h3>
-                <p>10 yildan ortiq tajribaga ega jamoa.</p>
+                <h3 className="pro-card__title">{t("about.pros.tajriba")}</h3>
+                <p>{t("about.pros.tajribaTxt")}</p>
               </div>
             </div>
           </div>

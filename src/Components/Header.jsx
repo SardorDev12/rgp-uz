@@ -8,6 +8,8 @@ import { FaFacebook } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { CiMenuBurger } from "react-icons/ci";
 
+import { useTranslation } from "react-i18next";
+
 // Images
 import uzFlag from "../Images/Lang/uz.svg";
 import ruFlag from "../Images/Lang/ru.svg";
@@ -23,7 +25,21 @@ import Cta from "./Cta";
 import { useState } from "react";
 
 function Header() {
+  const {
+    t,
+    i18n: { changeLanguage, language },
+  } = useTranslation();
+
+  const changeToUz = () => {
+    changeLanguage("uz");
+  };
+
+  const changeToRu = () => {
+    changeLanguage("ru");
+  };
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -35,7 +51,7 @@ function Header() {
           <li>
             <a href="tel:+998 90 601 04 01" target="_blank">
               <MdCall />
-              +998 90 601 04 01
+              +998 90 601 04 01{" "}
             </a>
           </li>
           <div className="line"></div>
@@ -49,16 +65,16 @@ function Header() {
           <li>
             <a>
               <FaClock />
-              Dushanba-Shanba, 9:00-18:00
+              {t("header.contactInfo.workingHours")}
             </a>
           </li>
         </ul>
         <div className="lang-links">
           <div className="lang">
-            <div className="lang-uz">
+            <div onClick={changeToUz} className="lang-uz">
               <img src={uzFlag} alt="uz flag" />
             </div>
-            <div className="lang-ru">
+            <div onClick={changeToRu} className="lang-ru">
               <img src={ruFlag} alt="uz flag" />
             </div>
           </div>
@@ -95,7 +111,8 @@ function Header() {
           <div className="line"></div>
           <div className="logo-title">
             <p>
-              REMONT GAZOVIX <br /> PLIT
+              {t("header.logoTitle1")} <br />
+              {t("header.logoTitle2")}
             </p>
           </div>
         </div>
@@ -103,16 +120,16 @@ function Header() {
         <nav className={`navbar ${isMenuOpen ? "show" : ""}`}>
           <ul className="nav-items">
             <li className="nav-item">
-              <a href="#home">Bosh sahifa</a>
+              <a href="#home"> {t("navItems.home")}</a>
             </li>
             <li className="nav-item">
-              <a href="#about">Haqimizda</a>
+              <a href="#about">{t("navItems.about")}</a>
             </li>
             <li className="nav-item">
-              <a href="#services">Xizmatlar</a>
+              <a href="#services">{t("navItems.services")}</a>
             </li>
             <li className="nav-item">
-              <a href="#footer">Aloqa</a>
+              <a href="#footer">{t("navItems.contact")}</a>
             </li>
           </ul>
           <Cta txt={"+998 90 601 04 01 "} />

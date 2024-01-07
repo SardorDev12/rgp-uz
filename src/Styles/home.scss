@@ -1,10 +1,8 @@
 @import "./variables.scss";
 
 .home {
-  width: 100vw;
   height: 699px;
   position: relative;
-
   @media screen and (max-width: $large-screen) {
     height: 600px;
   }
@@ -13,9 +11,9 @@
   }
 
   .home-bg {
-    width: 100vw;
     bottom: 0;
     position: absolute;
+    width: 100%;
     @media screen and (max-width: $medium-screen) {
       height: 300px;
     }

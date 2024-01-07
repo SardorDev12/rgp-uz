@@ -20,6 +20,8 @@
   .developer {
     text-align: right;
     margin-top: 1rem;
+    color: white;
+    display: block;
     @media screen and (max-width: $small-screen) {
       text-align: center;
     }

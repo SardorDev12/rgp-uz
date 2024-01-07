@@ -6,20 +6,18 @@ import adsBannerImg from "../Images/ads-banner.svg";
 
 // Components
 import Cta from "./Cta";
+import { useTranslation } from "react-i18next";
 
 function AdsBanner() {
+  const { t } = useTranslation();
   return (
     <div className="ads-section">
       <div className="adsbanner">
         <img src={adsBannerImg} alt="ads banner" />
         <div className="ads-card">
-          <h1>Kuchli mutaxasis kerakmi?</h1>
-          <p>
-            Bizning uzoq yillik tajribaga ega mutaxassizlardan tarkib topgan
-            jamoamiz sizning gaz plitangizga doir har qanday muammoga yechim
-            berishga tayyor.
-          </p>
-          <Cta txt={"Qo'ng'iroq qilish"} />
+          <h1>{t("ads.adsTitle")}</h1>
+          <p>{t("ads.adsTxt")}</p>
+          <Cta txt={t("ads.adsCtaTxt")} />
         </div>
       </div>
     </div>
