@@ -1,103 +1,96 @@
 @import "./variables.scss";
 .header {
-  position: fixed;
   width: 100%;
+  position: fixed;
   z-index: 99;
-  .line {
-    font-size: 2rem;
-    color: #9f9494;
-  }
   svg {
     font-size: 1.5rem;
-    color: #27283e;
-
-    :hover {
-      color: #00ccff;
-    }
+    color: #0d29a3;
   }
   .header-top {
     @include flex;
-    padding: $base-pad;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
     background-color: white;
-
-    .contact-info,
-    li,
-    a,
-    .lang-links,
-    .lang,
-    .social-links {
-      @include flex;
-    }
+    padding: $base-pad;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
     .contact-info {
-      font-size: 0.8rem;
-      li,
+      @include flex;
+      gap: 0.5rem;
+      @media screen and (max-width: $small-screen) {
+        display: none;
+      }
       a {
+        @include flex;
         gap: 0.5rem;
       }
     }
 
     .lang-links {
-      .lang {
-        div {
-          @include flex;
-          width: 2.5rem;
-          margin: 0 0.1rem;
-          img {
-            cursor: pointer;
-          }
-        }
-      }
-
+      @include flex;
+      .lang,
       .social-links {
+        @include flex;
         gap: 0.5rem;
+        cursor: pointer;
       }
     }
   }
 
-  .header-bottom,
-  .logo,
-  .navbar,
-  .nav-items {
-    @include flex;
-  }
   .header-bottom {
+    @include flex;
     background-color: #0d29a3;
     padding: $base-pad;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 
-    .logo-img {
-      width: 11rem;
-      cursor: pointer;
+    @media screen and (max-width: $small-screen) {
+      width: 100%;
     }
 
-    .line {
-      height: 2.5rem;
-      margin-right: 1rem;
+    .logo {
+      @include flex;
+      justify-content: flex-start;
+
+      .logo-img {
+        width: 150px;
+        cursor: pointer;
+      }
+      .logo-title {
+        color: white;
+        font-weight: 600;
+      }
     }
 
-    .logo-title {
-      font-weight: 600;
-      font-size: 1.3rem;
+    .toggle {
       color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      display: none;
+      @media screen and (max-width: $small-screen) {
+        display: block;
+      }
     }
 
     .navbar {
+      @include flex;
+      justify-content: flex-start;
+      @media screen and (max-width: $small-screen) {
+        display: none;
+      }
       .nav-items {
+        @include flex;
         gap: 2rem;
-        margin-right: 2rem;
-        a {
-          color: white;
-          &:hover {
-            color: #00ccff;
+        margin-right: 1rem;
+
+        .nav-item {
+          a {
+            color: white;
+            &:hover {
+              color: aquamarine;
+            }
           }
         }
-      }
-      .cta-btn {
-        padding: 0.6rem 1rem;
       }
     }
   }

@@ -52,6 +52,11 @@
     justify-content: space-between;
     align-items: flex-start;
     border-radius: 5px;
+
+    @media screen and (max-width: $large-screen) {
+      margin-top: 1rem;
+      width: 80%;
+    }
     .izohlar-slider {
       width: 45%;
 
@@ -91,6 +96,12 @@
     .izohlar-form {
       width: 55%;
       margin-left: 10px;
+
+      textarea {
+        @media screen and (max-width: $medium-screen) {
+          width: 60%;
+        }
+      }
     }
   }
 }

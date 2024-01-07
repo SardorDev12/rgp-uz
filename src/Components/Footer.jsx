@@ -19,7 +19,7 @@ function Footer() {
     name3: "message",
   };
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer-info">
         <div className="footer-logo">
           <img src={footerLogo} alt="footer logo" />
@@ -87,8 +87,6 @@ function Footer() {
         <div className="location">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6147.429835200025!2d67.005671!3d39.611104!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDM2JzQwLjAiTiA2N8KwMDAnMjAuNCJF!5e0!3m2!1sen!2s!4v1704561150881!5m2!1sen!2s"
-            width="500"
-            height="300"
             loading="lazy"
           ></iframe>
         </div>

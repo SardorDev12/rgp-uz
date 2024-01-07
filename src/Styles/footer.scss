@@ -8,6 +8,19 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: white;
+  .developer {
+    text-align: right;
+    margin-top: 1rem;
+  }
+
+  .location {
+    iframe {
+      @media screen and (min-width: $large-screen) {
+        width: 450px;
+        height: 200px;
+      }
+    }
+  }
 
   .footer-info {
     @include flex;
@@ -63,6 +76,14 @@
         ul {
           @include flex;
         }
+      }
+    }
+  }
+
+  .footer-form {
+    textarea {
+      @media screen and (max-width: $medium-screen) {
+        width: 60%;
       }
     }
   }

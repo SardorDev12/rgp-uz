@@ -5,6 +5,10 @@
     height: 450px;
     position: relative;
 
+    @media screen and (max-width: $medium-screen) {
+height: 350px;
+    }
+
     .ads-card {
       position: absolute;
       right: 0;

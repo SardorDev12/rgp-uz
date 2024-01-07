@@ -29,7 +29,7 @@ function Services() {
     name3: "message",
   };
   return (
-    <div className="services-section">
+    <div className="services-section" id="services">
       <div className="services-bg">
         <img src={servicesBg} alt="services bg" />
       </div>

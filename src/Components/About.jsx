@@ -13,7 +13,7 @@ import Cta from "./Cta";
 
 function About() {
   return (
-    <div className="about-section">
+    <div className="about-section" id="about">
       <div className="about-us">
         <div className="about-poster">
           <div className="poster-img">

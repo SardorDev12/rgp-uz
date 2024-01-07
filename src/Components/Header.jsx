@@ -6,6 +6,7 @@ import { FaTelegram } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
+import { CiMenuBurger } from "react-icons/ci";
 
 // Images
 import uzFlag from "../Images/Lang/uz.svg";
@@ -19,10 +20,16 @@ import "../Styles/header.scss";
 
 // Components
 import Cta from "./Cta";
+import { useState } from "react";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="header-top">
         <ul className="contact-info">
           <li>
@@ -40,8 +47,10 @@ function Header() {
           </li>
           <div className="line"></div>
           <li>
-            <FaClock />
-            <p>Dushanba-Shanba, 9:00-18:00</p>
+            <a>
+              <FaClock />
+              Dushanba-Shanba, 9:00-18:00
+            </a>
           </li>
         </ul>
         <div className="lang-links">
@@ -90,19 +99,20 @@ function Header() {
             </p>
           </div>
         </div>
-        <nav className="navbar">
+        <CiMenuBurger onClick={toggleMenu} className="toggle" />
+        <nav className={`navbar ${isMenuOpen ? "show" : ""}`}>
           <ul className="nav-items">
             <li className="nav-item">
-              <a href="">Bosh sahifa</a>
+              <a href="#home">Bosh sahifa</a>
             </li>
             <li className="nav-item">
-              <a href="">Haqimizda</a>
+              <a href="#about">Haqimizda</a>
             </li>
             <li className="nav-item">
-              <a href="">Xizmatlar</a>
+              <a href="#services">Xizmatlar</a>
             </li>
             <li className="nav-item">
-              <a href="">Aloqa</a>
+              <a href="#footer">Aloqa</a>
             </li>
           </ul>
           <Cta txt={"+998 90 601 04 01 "} />

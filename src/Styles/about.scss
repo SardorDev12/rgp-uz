@@ -18,8 +18,14 @@
         top: 8rem;
         padding: 0 3rem;
         color: white;
+        @media screen and (max-width: $large-screen) {
+          padding: 0 1rem;
+        }
         h1 {
           font-size: 3rem;
+          @media screen and (max-width: $large-screen) {
+            font-size: 2rem;
+          }
         }
         h2 {
           font-weight: 300;
@@ -32,11 +38,17 @@
       position: relative;
       .about-title {
         font-size: 3rem;
+        @media screen and (max-width: $large-screen) {
+          font-size: 2rem;
+        }
       }
 
       p {
         font-size: 1.3rem;
         margin: 2rem 0;
+        @media screen and (max-width: $large-screen) {
+          font-size: 1.2rem;
+        }
       }
 
       .cta-btn {
@@ -79,10 +91,20 @@
           .pro-card__title {
             margin-bottom: 1rem;
             font-size: 1.5rem;
+            @media screen and (max-width: $large-screen) {
+              font-size: 1rem;
+            }
           }
 
-          p{
+          p {
             max-width: 15rem;
+            @media screen and (max-width: $large-screen) {
+              max-width: 20rem;
+              font-size: 0.9rem;
+            }
+            @media screen and (max-width: $medium-screen) {
+              font-size: 0.8rem;
+            }
           }
         }
       }

@@ -22,7 +22,7 @@ const formProps = {
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="home-bg">
         <img src={bannerWave} alt="home bg" />
       </div>
