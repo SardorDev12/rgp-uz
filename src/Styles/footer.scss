@@ -1,0 +1,69 @@
+@import "./variables.scss";
+
+.footer {
+  background-color: #27283e;
+  @include flex;
+  align-items: flex-start;
+  padding: $base-pad;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: white;
+
+  .footer-info {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    .footer-logo {
+      width: 12rem;
+    }
+
+    .manzil {
+      margin-bottom: 2rem;
+      .manzil-title {
+        margin: 1rem 0;
+        font-weight: 500;
+      }
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .contact-links {
+      @include flex;
+      align-items: flex-start;
+
+      svg {
+        font-size: 1.7rem;
+        color: white;
+        &:hover {
+          color: aqua;
+        }
+      }
+      .numbers {
+        ul > li {
+          margin-bottom: 0.5em;
+          a {
+            @include flex;
+            justify-content: flex-start;
+            color: white;
+          }
+        }
+      }
+      .numbers,
+      .social-links {
+        h5 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          margin-right: 2rem;
+        }
+      }
+      .social-links {
+        ul {
+          @include flex;
+        }
+      }
+    }
+  }
+}

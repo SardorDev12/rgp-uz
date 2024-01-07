@@ -10,6 +10,7 @@ import Aksiya from "./Components/Aksiya";
 import Services from "./Components/Services";
 import AdsBanner from "./Components/AdsBanner";
 import Partners from "./Components/Partners";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Services />
       <AdsBanner />
       <Partners />
+      <Footer />
     </div>
   );
 }
