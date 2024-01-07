@@ -23,8 +23,7 @@ function App() {
       <Services />
       <AdsBanner />
       <Partners />
-      {/*
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
