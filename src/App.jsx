@@ -22,8 +22,8 @@ function App() {
       <Aksiya />
       <Services />
       <AdsBanner />
-      {/*
       <Partners />
+      {/*
       <Footer /> */}
     </div>
   );

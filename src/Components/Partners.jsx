@@ -32,7 +32,7 @@ function Partners() {
     speed: 4000,
     autoplay: true,
     autoplaySpeed: 1000,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
   };
   return (
