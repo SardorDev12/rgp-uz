@@ -11,7 +11,6 @@
 
   @media screen and (max-width: $small-screen) {
     flex-direction: column;
-    align-items: flex-start;
     align-items: center;
     padding: $small-pad;
     padding-top: 3rem;
@@ -33,6 +32,9 @@
         width: 480px;
         margin-left: 1rem;
         height: 200px;
+      }
+      @media screen and (max-width: $small-screen) {
+        width: 100%;
       }
     }
   }
@@ -116,6 +118,14 @@
   }
 
   .footer-form {
+    @media screen and (max-width: $small-screen) {
+      width: 100%;
+    }
+    input {
+      @media screen and (max-width: $small-screen) {
+        width: 120%;
+      }
+    }
     textarea {
       @media screen and (max-width: $medium-screen) {
         width: 60%;
