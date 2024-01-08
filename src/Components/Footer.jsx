@@ -28,8 +28,8 @@ function Footer() {
         </div>
         <div className="manzil">
           <h3 className="manzil-title">{t("footer.footerTitle")}</h3>
-          <h4>{t("footer.footerManzil.manzilTitle")}</h4>
-          <p>{t("footer.footerManzil.manzil")}</p>
+          {/* <h4>{t("footer.footerManzil.manzilTitle")}</h4>
+          <p>{t("footer.footerManzil.manzil")}</p> */}
         </div>
 
         <div className="contact-links">
@@ -56,22 +56,31 @@ function Footer() {
               <h5>{t("footer.contacts.social")}</h5>
               <ul>
                 <li>
-                  <a href="">
+                  <a href="https://t.me/rgp_samarkand" target="_blank">
                     <FaTelegram />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a
+                    href="https://www.instagram.com/rgp_samarkand?igsh=cDlqb2dnNTdpbXBu&utm_source=qr"
+                    target="_blank"
+                  >
                     <RiInstagramFill />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a
+                    href="https://www.facebook.com/jamshed.boltaev.5?mibextid=LQQJ4d"
+                    target="_blank"
+                  >
                     <FaFacebook />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a
+                    href="https://youtube.com/@rgp?si=hDaHe-RipgJXt_Nm"
+                    target="_blank"
+                  >
                     <IoLogoYoutube />
                   </a>
                 </li>

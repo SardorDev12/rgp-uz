@@ -89,22 +89,31 @@ function Header() {
           <div className="line"></div>
           <ul className="social-links">
             <li>
-              <a href="">
+              <a href="https://t.me/rgp_samarkand" target="_blank">
                 <FaTelegram />
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://www.instagram.com/rgp_samarkand?igsh=cDlqb2dnNTdpbXBu&utm_source=qr"
+                target="_blank"
+              >
                 <RiInstagramFill />
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://www.facebook.com/jamshed.boltaev.5?mibextid=LQQJ4d"
+                target="_blank"
+              >
                 <FaFacebook />
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://youtube.com/@rgp?si=hDaHe-RipgJXt_Nm"
+                target="_blank"
+              >
                 <IoLogoYoutube />
               </a>
             </li>

@@ -47,7 +47,7 @@ function Home() {
       </div>
       <div className="cta-call">
         <div className="telegram">
-          <a href="">
+          <a href="https://t.me/rgp_samarkand">
             <FaTelegram />
           </a>
         </div>
