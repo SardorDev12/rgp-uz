@@ -126,17 +126,5 @@
         }
       }
     }
-    .izohlar-form {
-      margin-left: 10px;
-      @media screen and (max-width: $small-screen) {
-        display: none;
-      }
-
-      textarea {
-        @media screen and (max-width: $medium-screen) {
-          width: 60%;
-        }
-      }
-    }
   }
 }

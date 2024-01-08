@@ -63,10 +63,32 @@
     right: 0;
 
     @media screen and (max-width: $small-screen) {
-      width: 85%;
       position: relative;
-      margin: 0 auto;
       top: 50rem;
+    }
+  }
+
+  .cta-call {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    @include flex;
+    padding: 0 2rem 2rem;
+    padding-top: 10rem;
+    z-index: 9;
+
+    div {
+      background-color: rgb(33, 126, 231);
+      border-radius: 50%;
+      display: none;
+      padding: 0.8rem 1rem 0.7rem;
+      @media screen and (max-width: $small-screen) {
+        display: block;
+      }
+      svg {
+        font-size: 4rem;
+        color: white;
+      }
     }
   }
 }

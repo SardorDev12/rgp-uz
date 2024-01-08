@@ -30,12 +30,8 @@ function Header() {
     i18n: { changeLanguage, language },
   } = useTranslation();
 
-  const changeToUz = () => {
-    changeLanguage("uz");
-  };
-
-  const changeToRu = () => {
-    changeLanguage("ru");
+  const changeLang = (lang) => {
+    changeLanguage(lang);
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -75,11 +71,19 @@ function Header() {
         </ul>
         <div className="lang-links">
           <div className="lang">
-            <div onClick={changeToUz} className="lang-uz">
-              <img src={uzFlag} alt="uz flag" />
+            <div className="lang-uz">
+              <img
+                onClick={() => changeLang("uz")}
+                src={uzFlag}
+                alt="uz flag"
+              />
             </div>
-            <div onClick={changeToRu} className="lang-ru">
-              <img src={ruFlag} alt="uz flag" />
+            <div className="lang-ru">
+              <img
+                onClick={() => changeLang("ru")}
+                src={ruFlag}
+                alt="uz flag"
+              />
             </div>
           </div>
           <div className="line"></div>

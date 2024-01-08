@@ -37,6 +37,7 @@
 
     .lang-links {
       @include flex;
+      user-select: none;
       .lang,
       .social-links {
         @include flex;

@@ -116,23 +116,4 @@
       }
     }
   }
-
-  .footer-form {
-    @media screen and (max-width: $small-screen) {
-      width: 100%;
-    }
-    input {
-      @media screen and (max-width: $small-screen) {
-        width: 120%;
-      }
-    }
-    textarea {
-      @media screen and (max-width: $medium-screen) {
-        width: 60%;
-      }
-      @media screen and (max-width: $small-screen) {
-        width: 100%;
-      }
-    }
-  }
 }

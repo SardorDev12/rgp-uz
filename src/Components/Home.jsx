@@ -8,6 +8,8 @@ import bannerWave from "../Images/banner-wave.svg";
 // Components
 import Cta from "./Cta";
 import Form from "./Form";
+import { FaTelegram } from "react-icons/fa";
+import { PiPhoneCallFill } from "react-icons/pi";
 
 import { useTranslation } from "react-i18next";
 
@@ -42,6 +44,18 @@ function Home() {
       </div>
       <div className="home-form">
         <Form {...formProps} />
+      </div>
+      <div className="cta-call">
+        <div className="telegram">
+          <a href="">
+            <FaTelegram />
+          </a>
+        </div>
+        <div className="call">
+          <a target="_blank" href="tel:+998 90 601 04 01">
+            <PiPhoneCallFill />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -35,15 +35,10 @@
     right: 4rem;
     @media screen and (max-width: $small-screen) {
       top: -10rem;
-      width: 80%;
-    }
-    textarea {
-      @media screen and (max-width: $medium-screen) {
-        width: 60%;
-      }
-      @media screen and (max-width: $small-screen) {
-        width: 88%;
-      }
+      right: 50%;
+      width: 100%;
+      transform: translate(50%, 50%);
+      margin-bottom: 2rem;
     }
   }
 }
