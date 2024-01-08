@@ -4,6 +4,9 @@
   color: white;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  @media screen and (max-width: $small-screen) {
+    margin: 1rem 0;
+  }
 }
 
 .user-info {

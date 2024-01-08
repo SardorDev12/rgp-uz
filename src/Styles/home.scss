@@ -64,9 +64,9 @@
 
     @media screen and (max-width: $small-screen) {
       width: 85%;
-      bottom: -35rem;
-      right: 50%;
-      transform: translate(50%, -50%);
+      position: relative;
+      margin: 0 auto;
+      top: 50rem;
     }
   }
 }

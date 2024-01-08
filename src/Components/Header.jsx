@@ -44,6 +44,10 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="header" id="header">
       <div className="header-top">
@@ -119,16 +123,16 @@ function Header() {
         <CiMenuBurger onClick={toggleMenu} className="toggle" />
         <nav className={`navbar ${isMenuOpen ? "show" : ""}`}>
           <ul className="nav-items">
-            <li className="nav-item">
+            <li onClick={closeMenu} className="nav-item">
               <a href="#home"> {t("navItems.home")}</a>
             </li>
-            <li className="nav-item">
+            <li onClick={closeMenu} className="nav-item">
               <a href="#about">{t("navItems.about")}</a>
             </li>
-            <li className="nav-item">
+            <li onClick={closeMenu} className="nav-item">
               <a href="#services">{t("navItems.services")}</a>
             </li>
-            <li className="nav-item">
+            <li onClick={closeMenu} className="nav-item">
               <a href="#footer">{t("navItems.contact")}</a>
             </li>
           </ul>
