@@ -40,7 +40,7 @@ function Form({ title, api, plc1, plc2, plc3, name1, name2, name3 }) {
         alert("Xatolik yuz berdi.");
       }
     } catch (error) {
-      console.log(error);
+      alert(error);
     }
   };
 
