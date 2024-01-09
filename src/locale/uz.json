@@ -16,7 +16,7 @@
     "home": {
       "homeTitle1": "SAMARQAND VILOYATIDA GAZ PLITA ",
       "homeTitle2": "TA'MIRLASH XIZMATI",
-      "homeText": "Har qanday gaz plitangizni ta'mirlaymiz",
+      "homeText": "Har qanday gaz plitalarni ta'mirlaymiz",
       "ctaText": "Bog'lanish"
     },
     "form": {
@@ -41,7 +41,7 @@
         "narx": "Qulay narx",
         "narxTxt": "Barcha xizmatlarimiz hamma uchun qulay narxlarda.",
         "tajriba": "Ko'p yillik tajriba",
-        "tajribaTxt": "10 yildan ortiq tajribaga ega jamoa."
+        "tajribaTxt": "15 yildan ortiq tajribaga ega jamoa."
       }
     },
     "comment": {
@@ -71,7 +71,7 @@
       "yangilash": "Gaz plita yangilash",
       "konsultatsiya": "Bepul telefon konsultatsiya",
       "maslahat": "Tanlov bo'yicha maslahat",
-      "manzil": "Manzilga borib xizmat"
+      "manzil": "Manzilga borib xizmat ko'rsatish"
     },
     "ads": {
       "adsTitle": "Kuchli mutaxasis kerakmi?",
