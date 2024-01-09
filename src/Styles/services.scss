@@ -108,7 +108,7 @@
           margin: 1rem 0;
           overflow: auto;
           max-height: 100px;
-          word-break: break-all;
+          word-wrap: break-word;
           @media screen and (max-width: $small-screen) {
             font-size: 1.5rem;
             max-height: 200px;

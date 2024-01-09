@@ -11,9 +11,18 @@ import proImg4 from "../Images/pro-img-4.svg";
 // Components
 import Cta from "./Cta";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 function About() {
   const { t } = useTranslation();
+
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  const handleImagesLoad = () => {
+    setImagesLoaded(true);
+    console.log(imagesLoaded);
+  };
+
   return (
     <div className="about-section" id="about">
       <div className="about-us">
@@ -42,38 +51,70 @@ function About() {
         <div className="pros-cards">
           <div className="card">
             <div className="pro-img">
-              <img src={proImg1} alt="pro img" loading="lazy" />
-              <div className="pro-card">
-                <h3 className="pro-card__title">{t("about.pros.tezkorlik")}</h3>
-                <p>{t("about.pros.tezkorlikTxt")}</p>
-              </div>
+              <img
+                src={proImg1}
+                alt="pro img"
+                loading="lazy"
+                onLoad={handleImagesLoad}
+              />
+              {imagesLoaded && (
+                <div className="pro-card">
+                  <h3 className="pro-card__title">
+                    {t("about.pros.tezkorlik")}
+                  </h3>
+                  <p>{t("about.pros.tezkorlikTxt")}</p>
+                </div>
+              )}
             </div>
           </div>
           <div className="card">
             <div className="pro-img">
-              <img src={proImg2} alt="pro img" loading="lazy" />
-              <div className="pro-card">
-                <h3 className="pro-card__title">{t("about.pros.sifat")}</h3>
-                <p>{t("about.pros.sifatTxt")}</p>
-              </div>
+              <img
+                src={proImg2}
+                alt="pro img"
+                loading="lazy"
+                onLoad={handleImagesLoad}
+              />
+              {imagesLoaded && (
+                <div className="pro-card">
+                  <h3 className="pro-card__title">{t("about.pros.sifat")}</h3>
+                  <p>{t("about.pros.sifatTxt")}</p>
+                </div>
+              )}
             </div>
           </div>
+
           <div className="card">
             <div className="pro-img">
-              <img src={proImg3} alt="pro img" loading="lazy" />
-              <div className="pro-card">
-                <h3 className="pro-card__title">{t("about.pros.narx")}</h3>
-                <p>{t("about.pros.narxTxt")}</p>
-              </div>
+              <img
+                src={proImg3}
+                alt="pro img"
+                loading="lazy"
+                onLoad={handleImagesLoad}
+              />
+              {imagesLoaded && (
+                <div className="pro-card">
+                  <h3 className="pro-card__title">{t("about.pros.narx")}</h3>
+                  <p>{t("about.pros.narxTxt")}</p>
+                </div>
+              )}
             </div>
           </div>
+
           <div className="card">
             <div className="pro-img">
-              <img src={proImg4} alt="pro img" loading="lazy" />
-              <div className="pro-card">
-                <h3 className="pro-card__title">{t("about.pros.tajriba")}</h3>
-                <p>{t("about.pros.tajribaTxt")}</p>
-              </div>
+              <img
+                src={proImg4}
+                alt="pro img"
+                loading="lazy"
+                onLoad={handleImagesLoad}
+              />
+              {imagesLoaded && (
+                <div className="pro-card">
+                  <h3 className="pro-card__title">{t("about.pros.tajriba")}</h3>
+                  <p>{t("about.pros.tajribaTxt")}</p>
+                </div>
+              )}
             </div>
           </div>
         </div>
