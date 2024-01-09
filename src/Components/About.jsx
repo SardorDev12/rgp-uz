@@ -12,7 +12,6 @@ import proImg4 from "../Images/pro-img-4.svg";
 import Cta from "./Cta";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-
 function About() {
   const { t } = useTranslation();
 
@@ -20,7 +19,6 @@ function About() {
 
   const handleImagesLoad = () => {
     setImagesLoaded(true);
-    console.log(imagesLoaded);
   };
 
   return (
