@@ -76,6 +76,7 @@ function Header() {
                 onClick={() => changeLang("uz")}
                 src={uzFlag}
                 alt="uz flag"
+                loading="lazy"
               />
             </div>
             <div className="lang-ru">
@@ -83,6 +84,7 @@ function Header() {
                 onClick={() => changeLang("ru")}
                 src={ruFlag}
                 alt="uz flag"
+                loading="lazy"
               />
             </div>
           </div>
@@ -123,7 +125,7 @@ function Header() {
       <div className="header-bottom">
         <div className="logo">
           <div className="logo-img">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" loading="lazy" />
           </div>
           <div className="line"></div>
           <div className="logo-title">

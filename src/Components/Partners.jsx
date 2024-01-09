@@ -23,6 +23,7 @@ import partner17 from "../Images/Partners/img17.svg";
 import partner18 from "../Images/Partners/img18.svg";
 import partner19 from "../Images/Partners/img19.svg";
 import partner20 from "../Images/Partners/img20.svg";
+import partner21 from "../Images/Partners/img21.svg";
 
 // Images
 
@@ -43,64 +44,67 @@ function Partners() {
       <div className="partners">
         <Slider {...settings}>
           <div className="partner">
-            <img src={partner1} alt="partner img" />
+            <img src={partner1} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner2} alt="partner img" />
+            <img src={partner2} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner3} alt="partner img" />
+            <img src={partner3} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner4} alt="partner img" />
+            <img src={partner4} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner5} alt="partner img" />
+            <img src={partner5} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner6} alt="partner img" />
+            <img src={partner6} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner7} alt="partner img" />
+            <img src={partner7} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner8} alt="partner img" />
+            <img src={partner8} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner9} alt="partner img" />
+            <img src={partner9} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner10} alt="partner img" />
+            <img src={partner10} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner11} alt="partner img" />
+            <img src={partner11} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner12} alt="partner img" />
+            <img src={partner12} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner13} alt="partner img" />
+            <img src={partner13} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner14} alt="partner img" />
+            <img src={partner14} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner15} alt="partner img" />
+            <img src={partner15} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner16} alt="partner img" />
+            <img src={partner16} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner17} alt="partner img" />
+            <img src={partner17} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner18} alt="partner img" />
+            <img src={partner18} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner19} alt="partner img" />
+            <img src={partner19} alt="partner img" loading="lazy" />
           </div>
           <div className="partner">
-            <img src={partner20} alt="partner img" />
+            <img src={partner20} alt="partner img" loading="lazy" />
+          </div>
+          <div className="partner">
+            <img src={partner21} alt="partner img" loading="lazy" />
           </div>
         </Slider>
       </div>

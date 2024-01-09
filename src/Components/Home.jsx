@@ -30,10 +30,10 @@ function Home() {
   return (
     <div className="home" id="home">
       <div className="home-bg">
-        <img src={bannerWave} alt="home bg" />
+        <img src={bannerWave} alt="home bg" loading="lazy" />
       </div>
       <div className="home-logo">
-        <img src={bannerLogo} alt="home logo" />
+        <img src={bannerLogo} alt="home logo" loading="lazy" />
       </div>
       <div className="home-info">
         <h1 className="home-title">

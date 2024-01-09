@@ -24,7 +24,7 @@ function Comment() {
   return (
     <div>
       <div className="commentImg">
-        <img src={commentImg} alt="comment img" />
+        <img src={commentImg} alt="comment img" loading="lazy" />
         <div className="commemt-info">
           <div className="comment-title">
             {t("comment.commentTitle1")} <br />

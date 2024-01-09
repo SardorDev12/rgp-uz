@@ -16,7 +16,7 @@ function Aksiya() {
       <div className="aksiya-cards">
         <div className="aksiya-card">
           <div className="aksiya-img">
-            <img src={aksiyaImg} alt="aksiya img" />
+            <img src={aksiyaImg} alt="aksiya img" loading="lazy" />
             <div className="aksiya-info">
               <h3 className="card-title">
                 {t("aksiyalar.aksiyaCards.saytOrqali")}
@@ -28,7 +28,7 @@ function Aksiya() {
         </div>
         <div className="aksiya-card">
           <div className="aksiya-img">
-            <img src={aksiyaImg} alt="aksiya img" />
+            <img src={aksiyaImg} alt="aksiya img" loading="lazy" />
             <div className="aksiya-info">
               <h3 className="card-title">
                 {t("aksiyalar.aksiyaCards.pensionerlar")}
@@ -40,7 +40,7 @@ function Aksiya() {
         </div>
         <div className="aksiya-card">
           <div className="aksiya-img">
-            <img src={aksiyaImg} alt="aksiya img" />
+            <img src={aksiyaImg} alt="aksiya img" loading="lazy" />
             <div className="aksiya-info">
               <h3 className="card-title">
                 {" "}

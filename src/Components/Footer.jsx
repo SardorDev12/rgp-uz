@@ -24,7 +24,7 @@ function Footer() {
     <div className="footer" id="footer">
       <div className="footer-info">
         <div className="footer-logo">
-          <img src={footerLogo} alt="footer logo" />
+          <img src={footerLogo} alt="footer logo" loading="lazy" />
         </div>
         <div className="manzil">
           <h3 className="manzil-title">{t("footer.footerTitle")}</h3>

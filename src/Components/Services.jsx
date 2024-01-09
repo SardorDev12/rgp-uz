@@ -33,7 +33,7 @@ function Services() {
   return (
     <div className="services-section" id="services">
       <div className="services-bg">
-        <img src={servicesBg} alt="services bg" />
+        <img src={servicesBg} alt="services bg" loading="lazy" />
       </div>
       <div className="services-info">
         <div className="services-title">{t("services.servicesTitle")}</div>

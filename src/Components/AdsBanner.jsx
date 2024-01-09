@@ -13,7 +13,7 @@ function AdsBanner() {
   return (
     <div className="ads-section">
       <div className="adsbanner">
-        <img src={adsBannerImg} alt="ads banner" />
+        <img src={adsBannerImg} alt="ads banner" loading="lazy" />
         <div className="ads-card">
           <h1>{t("ads.adsTitle")}</h1>
           <p>{t("ads.adsTxt")}</p>
