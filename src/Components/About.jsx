@@ -12,7 +12,6 @@ import proImg4 from "../Images/pro-img-4.svg";
 import Cta from "./Cta";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-import LazyLoad from "react-lazyload";
 import LoadingCard from "./LoadingCard";
 
 function About() {
@@ -68,14 +67,12 @@ function About() {
           ) : (
             <div className="card">
               <div className="pro-img">
-                <LazyLoad height={200} offset={100} once>
-                  <img
-                    src={proImg1}
-                    alt="pro img"
-                    loading="lazy"
-                    onLoad={handleImagesLoad}
-                  />
-                </LazyLoad>
+                <img
+                  src={proImg1}
+                  alt="pro img"
+                  loading="lazy"
+                  onLoad={handleImagesLoad}
+                />
                 {imagesLoaded && (
                   <div className="pro-card">
                     <h3 className="pro-card__title">
