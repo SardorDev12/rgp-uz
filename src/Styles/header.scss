@@ -30,18 +30,31 @@
 
       @media screen and (max-width: $small-screen) {
         overflow: scroll;
+        justify-content: space-between;
+        width: 100%;
+        padding: $small-pad;
       }
       svg {
         @media screen and (max-width: $small-screen) {
-          display: none;
+          font-size: 1.5rem;
+          margin: 0.2rem 0;
         }
       }
 
       li {
+        &:first {
+          display: none;
+        }
         a {
           @media screen and (max-width: $small-screen) {
             font-size: 1rem;
           }
+        }
+      }
+      .line,
+      li:first-child {
+        @media screen and (max-width: $small-screen) {
+          display: none;
         }
       }
       a {
