@@ -25,7 +25,7 @@ function About() {
   useEffect(() => {
     const fakeLoadingTimeout = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
 
     return () => {
       clearTimeout(fakeLoadingTimeout);
