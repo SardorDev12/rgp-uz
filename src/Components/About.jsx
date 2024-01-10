@@ -16,9 +16,13 @@ import LoadingCard from "./LoadingCard";
 
 function About() {
   const [loading, setLoading] = useState(true);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  const handleImagesLoad = () => {
+    setImagesLoaded(true);
+  };
 
   useEffect(() => {
-    // Simulate image and video loading (replace with actual loading logic)
     const fakeLoadingTimeout = setTimeout(() => {
       setLoading(false);
     }, 2000);
