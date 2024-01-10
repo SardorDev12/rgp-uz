@@ -19,15 +19,30 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     @media screen and (max-width: $small-screen) {
-      padding: $small-pad;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
+      flex-direction: column;
+      padding: 0;
     }
     .contact-info {
       @include flex;
       gap: 0.5rem;
+
       @media screen and (max-width: $small-screen) {
-        display: none;
+        overflow: scroll;
+      }
+      svg {
+        @media screen and (max-width: $small-screen) {
+          display: none;
+        }
+      }
+
+      li {
+        a {
+          @media screen and (max-width: $small-screen) {
+            font-size: 1rem;
+          }
+        }
       }
       a {
         @include flex;
@@ -37,6 +52,10 @@
 
     .lang-links {
       @include flex;
+
+      @media screen and (max-width: $small-screen) {
+        padding: $small-pad;
+      }
       .lang,
       .social-links {
         @include flex;
@@ -138,6 +157,19 @@
     .cta-btn {
       @media screen and (max-width: $small-screen) {
         display: none;
+      }
+    }
+  }
+
+  .mobile-header {
+    @include flex;
+    @media screen and (max-width: $small-screen) {
+      width: 100%;
+    }
+    .cta-btn {
+      display: none;
+      @media screen and (max-width: $small-screen) {
+        display: block;
       }
     }
   }

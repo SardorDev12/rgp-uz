@@ -135,7 +135,11 @@ function Header() {
             </p>
           </div>
         </div>
-        <CiMenuBurger onClick={toggleMenu} className="toggle" />
+        <div className="mobile-header">
+          <CiMenuBurger onClick={toggleMenu} className="toggle" />
+          <Cta txt={"+998 90 601 04 01 "} />
+        </div>
+
         <nav className={`navbar ${isMenuOpen ? "show" : ""}`}>
           <ul className="nav-items">
             <li onClick={closeMenu} className="nav-item">

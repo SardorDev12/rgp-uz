@@ -11,8 +11,24 @@ import proImg4 from "../Images/pro-img-4.svg";
 // Components
 import Cta from "./Cta";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import LazyLoad from "react-lazyload";
+import LoadingCard from "./LoadingCard";
+
 function About() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate image and video loading (replace with actual loading logic)
+    const fakeLoadingTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => {
+      clearTimeout(fakeLoadingTimeout);
+    };
+  }, []);
+
   const { t } = useTranslation();
 
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -47,74 +63,92 @@ function About() {
       <div className="pros">
         <h1 className="pros-title">{t("about.pros.prosTitle")}</h1>
         <div className="pros-cards">
-          <div className="card">
-            <div className="pro-img">
-              <img
-                src={proImg1}
-                alt="pro img"
-                loading="lazy"
-                onLoad={handleImagesLoad}
-              />
-              {imagesLoaded && (
-                <div className="pro-card">
-                  <h3 className="pro-card__title">
-                    {t("about.pros.tezkorlik")}
-                  </h3>
-                  <p>{t("about.pros.tezkorlikTxt")}</p>
-                </div>
-              )}
+          {loading ? (
+            <LoadingCard />
+          ) : (
+            <div className="card">
+              <div className="pro-img">
+                <LazyLoad height={200} offset={100} once>
+                  <img
+                    src={proImg1}
+                    alt="pro img"
+                    loading="lazy"
+                    onLoad={handleImagesLoad}
+                  />
+                </LazyLoad>
+                {imagesLoaded && (
+                  <div className="pro-card">
+                    <h3 className="pro-card__title">
+                      {t("about.pros.tezkorlik")}
+                    </h3>
+                    <p>{t("about.pros.tezkorlikTxt")}</p>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="pro-img">
-              <img
-                src={proImg2}
-                alt="pro img"
-                loading="lazy"
-                onLoad={handleImagesLoad}
-              />
-              {imagesLoaded && (
-                <div className="pro-card">
-                  <h3 className="pro-card__title">{t("about.pros.sifat")}</h3>
-                  <p>{t("about.pros.sifatTxt")}</p>
-                </div>
-              )}
+          )}
+          {loading ? (
+            <LoadingCard />
+          ) : (
+            <div className="card">
+              <div className="pro-img">
+                <img
+                  src={proImg2}
+                  alt="pro img"
+                  loading="lazy"
+                  onLoad={handleImagesLoad}
+                />
+                {imagesLoaded && (
+                  <div className="pro-card">
+                    <h3 className="pro-card__title">{t("about.pros.sifat")}</h3>
+                    <p>{t("about.pros.sifatTxt")}</p>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-
-          <div className="card">
-            <div className="pro-img">
-              <img
-                src={proImg3}
-                alt="pro img"
-                loading="lazy"
-                onLoad={handleImagesLoad}
-              />
-              {imagesLoaded && (
-                <div className="pro-card">
-                  <h3 className="pro-card__title">{t("about.pros.narx")}</h3>
-                  <p>{t("about.pros.narxTxt")}</p>
-                </div>
-              )}
+          )}
+          {loading ? (
+            <LoadingCard />
+          ) : (
+            <div className="card">
+              <div className="pro-img">
+                <img
+                  src={proImg3}
+                  alt="pro img"
+                  loading="lazy"
+                  onLoad={handleImagesLoad}
+                />
+                {imagesLoaded && (
+                  <div className="pro-card">
+                    <h3 className="pro-card__title">{t("about.pros.narx")}</h3>
+                    <p>{t("about.pros.narxTxt")}</p>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-
-          <div className="card">
-            <div className="pro-img">
-              <img
-                src={proImg4}
-                alt="pro img"
-                loading="lazy"
-                onLoad={handleImagesLoad}
-              />
-              {imagesLoaded && (
-                <div className="pro-card">
-                  <h3 className="pro-card__title">{t("about.pros.tajriba")}</h3>
-                  <p>{t("about.pros.tajribaTxt")}</p>
-                </div>
-              )}
+          )}
+          {loading ? (
+            <LoadingCard />
+          ) : (
+            <div className="card">
+              <div className="pro-img">
+                <img
+                  src={proImg4}
+                  alt="pro img"
+                  loading="lazy"
+                  onLoad={handleImagesLoad}
+                />
+                {imagesLoaded && (
+                  <div className="pro-card">
+                    <h3 className="pro-card__title">
+                      {t("about.pros.tajriba")}
+                    </h3>
+                    <p>{t("about.pros.tajribaTxt")}</p>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

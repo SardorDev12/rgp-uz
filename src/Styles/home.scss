@@ -10,12 +10,19 @@
     height: 450px;
   }
 
+  @media screen and (max-width: $small-screen) {
+    height: 95vh;
+  }
+
   .home-bg {
     bottom: 0;
     position: absolute;
     width: 100%;
     @media screen and (max-width: $medium-screen) {
       height: 300px;
+    }
+    @media screen and (max-width: $small-screen) {
+      height: 350px;
     }
   }
 
@@ -24,10 +31,21 @@
     width: 35rem;
     right: 8rem;
     top: 13rem;
-
     @media screen and (max-width: $small-screen) {
       right: 2rem;
-      top: 10rem;
+      top: 15rem;
+    }
+
+    .home-logo__title {
+      display: none;
+      text-shadow: 0px 0px 5px white;
+      @media screen and (max-width: $small-screen) {
+        display: block;
+        text-align: right;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #005282;
+      }
     }
   }
 
@@ -43,11 +61,14 @@
     .home-title {
       font-size: 2.3rem;
       color: white;
+      @media screen and (max-width: $large-screen) {
+        font-size: 1.5rem;
+      }
       @media screen and (max-width: $medium-screen) {
         font-size: 1.5rem;
       }
-      @media screen and (max-width: $large-screen) {
-        font-size: 1.5rem;
+      @media screen and (max-width: $small-screen) {
+        font-size: 2rem;
       }
     }
     p {
@@ -64,7 +85,7 @@
 
     @media screen and (max-width: $small-screen) {
       position: relative;
-      top: 50rem;
+      top: 60rem;
     }
   }
 
