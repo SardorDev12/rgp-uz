@@ -36,7 +36,7 @@ function Home() {
         <img src={bannerLogo} alt="home logo" loading="lazy" />
         <div className="home-logo__title">
           <p>
-            {t("header.logoTitle1")} <br />
+            {t("header.logoTitle1")}
             {t("header.logoTitle2")}
           </p>
         </div>
