@@ -33,9 +33,9 @@ function Partners() {
   const settings = {
     arrows: false,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
   };

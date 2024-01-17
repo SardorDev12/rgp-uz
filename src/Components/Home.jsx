@@ -34,12 +34,12 @@ function Home() {
       </div>
       <div className="home-logo">
         <img src={bannerLogo} alt="home logo" loading="lazy" />
-        <div className="home-logo__title">
+        {/* <div className="home-logo__title">
           <p>
             {t("header.logoTitle1")}
             {t("header.logoTitle2")}
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="home-info">
         <h1 className="home-title">
