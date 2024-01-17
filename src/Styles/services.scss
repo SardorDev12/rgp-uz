@@ -50,6 +50,10 @@
       .service-card {
         svg {
           font-size: 4rem;
+          &:hover {
+            transform: rotate(360deg);
+            transition: all 0.3s ease-in-out;
+          }
         }
 
         h4 {

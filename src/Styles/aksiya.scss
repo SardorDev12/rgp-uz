@@ -17,8 +17,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+
     @media screen and (max-width: $small-screen) {
       grid-template-columns: 1fr;
+    }
+
+    .aksiya-card {
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+      }
     }
     .aksiya-img {
       position: relative;

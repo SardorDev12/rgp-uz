@@ -28,8 +28,8 @@ function Footer() {
         </div>
         <div className="manzil">
           <h3 className="manzil-title">{t("footer.footerTitle")}</h3>
-          {/* <h4>{t("footer.footerManzil.manzilTitle")}</h4>
-          <p>{t("footer.footerManzil.manzil")}</p> */}
+          <h4>{t("footer.footerManzil.manzilTitle")}</h4>
+          <p>{t("footer.footerManzil.manzil")}</p>
         </div>
 
         <div className="contact-links">
@@ -93,10 +93,7 @@ function Footer() {
         <Form {...formProps} />
 
         <div className="location">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6147.429835200025!2d67.005671!3d39.611104!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDM2JzQwLjAiTiA2N8KwMDAnMjAuNCJF!5e0!3m2!1sen!2s!4v1704561150881!5m2!1sen!2s"
-            loading="lazy"
-          ></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=245262720486"></iframe>
         </div>
         <a target="_blank" href="https://supersite.uz/" className="developer">
           {t("footer.developer")}

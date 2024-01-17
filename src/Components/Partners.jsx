@@ -24,6 +24,7 @@ import partner18 from "../Images/Partners/img18.svg";
 import partner19 from "../Images/Partners/img19.svg";
 import partner20 from "../Images/Partners/img20.svg";
 import partner21 from "../Images/Partners/img21.svg";
+import partner22 from "../Images/Partners/img22.svg";
 
 // Images
 
@@ -32,7 +33,7 @@ function Partners() {
   const settings = {
     arrows: false,
     infinite: true,
-    speed: 4000,
+    speed: 2000,
     autoplay: true,
     autoplaySpeed: 1000,
     slidesToShow: 4,
@@ -105,6 +106,9 @@ function Partners() {
           </div>
           <div className="partner">
             <img src={partner21} alt="partner img" loading="lazy" />
+          </div>
+          <div className="partner">
+            <img src={partner22} alt="partner img" loading="lazy" />
           </div>
         </Slider>
       </div>
