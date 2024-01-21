@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 function Footer() {
   const { t } = useTranslation();
   const formProps = {
-    api: "https://sardorfarhodogli.pythonanywhere.com/applications/",
+    api: "http://back.rgp.uz/applications/",
     plc1: t("form.name"),
     plc2: t("form.num"),
     plc3: t("form.message"),

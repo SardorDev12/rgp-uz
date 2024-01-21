@@ -18,7 +18,7 @@ function Home() {
 
   const formProps = {
     title: t("form.formTitle"),
-    api: "https://sardorfarhodogli.pythonanywhere.com/applications/",
+    api: "http://back.rgp.uz/applications/",
     plc1: t("form.name"),
     plc2: t("form.num"),
     plc3: t("form.message"),
