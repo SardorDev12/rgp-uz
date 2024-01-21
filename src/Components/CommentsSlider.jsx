@@ -9,7 +9,7 @@ const CommentsSlider = () => {
 
   useEffect(() => {
     // Fetch data from your API
-    fetch("http://back.rgp.uz/comments/")
+    fetch("https://back.rgp.uz/comments/")
       .then((response) => response.json())
       .then((result) => setData(result))
       .catch((error) => console.error("Error fetching data:", error));

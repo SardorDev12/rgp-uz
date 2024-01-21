@@ -12,7 +12,7 @@ function Comment() {
   const { t } = useTranslation();
   const formProps = {
     title: t("comment.commentForm.commentFormTitle"),
-    api: "http://back.rgp.uz/comments/",
+    api: "https://back.rgp.uz/comments/",
     plc1: t("comment.commentForm.name"),
     plc2: t("comment.commentForm.job"),
     plc3: t("comment.commentForm.comment"),
